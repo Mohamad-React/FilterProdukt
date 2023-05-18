@@ -1,0 +1,179 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+}
+
+.underline {
+    width: 177px;
+    height: 3px;
+    background: rgb(81, 142, 223);
+
+}
+
+.up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.up h1 {
+    padding-bottom: 13px;
+}
+
+.produkt {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 175PX;
+
+
+}
+
+.produktbox {
+    background-color: rgb(233, 231, 227);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 354px;
+    margin-bottom: -5px;
+    width: 290px;
+    align-items: center;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    animation: animate 0.5s ease-in-out;
+    -webkit-animation: animate .5s ease-in-out;
+
+}
+
+.produktbox img {
+
+    height: 170px;
+    object-fit: cover;
+
+
+}
+
+.pricetitle {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricetitle span {
+
+    border-radius: 50px;
+    background: rgb(45, 226, 106);
+    color: #f9f9f9;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.pricetitle p {
+    font-size: 15px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 15px;
+
+
+}
+
+.desc p {
+    padding: 25px 10px;
+    text-align: justify;
+}
+
+
+.filterbutton {
+    margin-top: 20px
+}
+
+.filterbutton button {
+    margin: 3px
+}
+
+
+.filterbutton button:focus {
+    outline: 2px solid rgb(46, 200, 247);
+    border: none;
+}
+
+@keyframes animate {
+
+
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+@media screen and (max-width : 900px) {
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .produkt .produktbox {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width : 500px) {
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        padding: 0 20px;
+    }
+
+    .filterbutton button {
+        width: 71px;
+        height: 27px;
+
+        font-size: 10px;
+    }
+
+    .produkt .produktbox {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width : 1010px) {
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .produkt .produktbox {
+        width: 100%;
+
+
+    }
+}
